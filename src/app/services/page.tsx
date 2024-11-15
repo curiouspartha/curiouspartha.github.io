@@ -12,7 +12,7 @@ export default function Services() {
         {/* Hero Section with Animation */}
         <div className="text-center space-y-8 mb-24 animate-fade-in">
           <span className="inline-block text-accent/80 font-medium px-4 py-2 bg-accent/10 rounded-full">
-            Expert Solutions for Modern Challenges
+            Expert Solutions for Modern Challenges 🚀
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">
             Services & Expertise
@@ -149,6 +149,55 @@ export default function Services() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div>
+
+        {/* My Approach Section */}
+        <div className="mb-24">
+          <h2 className="text-3xl font-bold text-gradient text-center mb-16">
+            My Approach
+          </h2>
+          <div className="max-w-3xl mx-auto space-y-12">
+            {[
+              {
+                number: "01",
+                title: "Discovery",
+                description: "Understanding your needs and project requirements through in-depth consultation. We'll discuss your goals, challenges, and vision to ensure perfect alignment.",
+              },
+              {
+                number: "02",
+                title: "Planning",
+                description: "Developing a comprehensive strategy and roadmap. I'll outline the technical approach, timeline, and deliverables to set clear expectations and ensure success.",
+              },
+              {
+                number: "03",
+                title: "Execution",
+                description: "Building your solution with regular updates and transparent communication. You'll always know the project status and have opportunities for feedback and adjustments.",
+              },
+              {
+                number: "04",
+                title: "Support",
+                description: "Providing ongoing maintenance and improvements after launch. I remain committed to your project's success with continued support and optimization.",
+              }
+            ].map((step) => (
+              <div key={step.number} className="flex gap-6 group">
+                <div className="relative flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center
+                    font-mono text-lg font-bold text-accent border border-accent/20
+                    group-hover:scale-110 transition-all duration-500">
+                    {step.number}
+                  </div>
+                  {step.number !== "04" && (
+                    <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[2px] h-[calc(100%+3rem)]
+                      bg-gradient-to-b from-accent/20 to-transparent" />
+                  )}
+                </div>
+                <div className="space-y-2 pt-2">
+                  <h3 className="text-xl font-bold text-gradient">{step.title}</h3>
+                  <p className="text-content leading-relaxed">{step.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
