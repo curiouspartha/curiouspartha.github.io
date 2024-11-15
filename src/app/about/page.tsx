@@ -10,16 +10,57 @@ export default function About() {
 
         {/* Hero Section */}
         <div className="text-center space-y-6 mb-20">
+          <span className="inline-block text-accent/80 font-medium px-4 py-2 bg-accent/10 rounded-full mb-4">
+            Hello, nice to meet you! 👋
+          </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">
             About Me
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
-            A passionate Full Stack Engineer with a love for clean code and innovative solutions. 
-            I specialize in building scalable applications and creating exceptional digital experiences.
+            I'm a passionate Full Stack Engineer who believes in the perfect blend of creativity and technical expertise. 
+            With a keen eye for detail and a love for clean code, I transform complex challenges into elegant solutions.
           </p>
         </div>
 
-        {/* Journey Section */}
+        {/* Values Section - New! */}
+        <div className="grid gap-8 md:grid-cols-3 mb-20">
+          <div className="card hover:-translate-y-2 transition-transform text-center">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4 mx-auto">
+              <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Quality First</h3>
+            <p className="text-content">
+              Every line of code is crafted with precision and care, ensuring scalable and maintainable solutions.
+            </p>
+          </div>
+
+          <div className="card hover:-translate-y-2 transition-transform text-center">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4 mx-auto">
+              <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Innovation Driven</h3>
+            <p className="text-content">
+              Constantly exploring new technologies and approaches to deliver cutting-edge solutions.
+            </p>
+          </div>
+
+          <div className="card hover:-translate-y-2 transition-transform text-center">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4 mx-auto">
+              <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Clear Communication</h3>
+            <p className="text-content">
+              Believing in transparent collaboration and keeping stakeholders informed every step of the way.
+            </p>
+          </div>
+        </div>
+
         <div className="space-y-20">
           {/* Experience Timeline */}
           <div className="space-y-8">

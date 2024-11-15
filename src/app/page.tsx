@@ -45,34 +45,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          {/* Tech stack section */}
-          <div className="space-y-8">
-            <div className="text-center">
-              <h2 className="text-lg font-medium text-foreground/50">
-                Tech Stack & Tools
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="card hover:scale-105 transition-transform">
-                <h3>Frontend</h3>
-                <p className="text-content">React, Next.js, TypeScript</p>
-              </div>
-              <div className="card hover:scale-105 transition-transform">
-                <h3>Backend</h3>
-                <p className="text-content">Node.js, Express, PostgreSQL</p>
-              </div>
-              <div className="card hover:scale-105 transition-transform">
-                <h3>Cloud</h3>
-                <p className="text-content">AWS, Docker, Kubernetes</p>
-              </div>
-              <div className="card hover:scale-105 transition-transform">
-                <h3>Tools</h3>
-                <p className="text-content">Git, CI/CD, Agile Methods</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
