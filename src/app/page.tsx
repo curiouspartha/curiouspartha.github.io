@@ -22,7 +22,15 @@ export default function Home() {
               <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed">
                 I&apos;m a Full Stack Engineer with a passion for crafting scalable and efficient solutions. 
                 With a strong foundation in Node.js, AWS, and cloud-native technologies, 
-                I&apos;m dedicated to transforming complex challenges into streamlined, user-centric applications.
+                I&apos;m dedicated to transforming complex challenges into streamlined, user-centric applications.{' '}
+                <a 
+                  href="https://stackshare.io/bparthu/mystack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  View my tech stack →
+                </a>
               </p>
             </div>
 
