@@ -10,7 +10,7 @@ export default function About() {
 
         {/* Hero Section */}
         <div className="text-center space-y-6 mb-20">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">
             About Me
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
@@ -145,7 +145,7 @@ export default function About() {
           <div className="text-center space-y-6">
             <h2 className="text-2xl sm:text-3xl font-bold">Ready to Collaborate?</h2>
             <p className="text-content max-w-2xl mx-auto">
-              I'm always interested in hearing about new projects and opportunities.
+              I&apos;m always interested in hearing about new projects and opportunities.
             </p>
             <a 
               href="/contact"

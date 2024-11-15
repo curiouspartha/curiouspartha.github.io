@@ -43,14 +43,8 @@
   .card {
     @apply rounded-xl transition-all duration-300 p-6
     backdrop-blur-md border
-    hover:border-accent/20
-    animate-[slide-up_0.5s_ease-out_forwards];
+    hover:border-accent/20;
   }
-
-  /* Optional: Add stagger effect for cards */
-  .card:nth-child(1) { animation-delay: 0.1s; }
-  .card:nth-child(2) { animation-delay: 0.2s; }
-  .card:nth-child(3) { animation-delay: 0.3s; }
 
   /* Dark mode card */
   :root:not(.light) .card {
@@ -93,33 +87,5 @@
     @apply bg-secondary/50 backdrop-blur-md
     border border-foreground/5
     hover:border-accent/20 hover:bg-secondary/70;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@layer utilities {
-  .animate-fade-in {
-    animation: fade-in 0.5s ease-out forwards;
   }
 }

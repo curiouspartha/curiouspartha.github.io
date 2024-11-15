@@ -13,15 +13,16 @@ export default function Home() {
           {/* Hero section */}
           <div className="text-center space-y-8">
             <div className="space-y-4">
-              <p className="text-accent/80 font-medium animate-fade-in">Hi, I'm Parthu 👋</p>
+              <p className="text-accent/80 font-medium">Hi, I&apos;m Parthu 👋</p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
                 <span className="text-gradient">Full Stack Engineer</span>
                 <br />
                 Crafting Digital Experiences
               </h1>
-              <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-                Transforming ideas into elegant solutions with modern technologies.
-                Specialized in building scalable applications and cloud architecture.
+              <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed">
+                I&apos;m a Full Stack Engineer with a passion for crafting scalable and efficient solutions. 
+                With a strong foundation in Node.js, AWS, and cloud-native technologies, 
+                I&apos;m dedicated to transforming complex challenges into streamlined, user-centric applications.
               </p>
             </div>
 

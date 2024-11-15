@@ -10,12 +10,13 @@ export default function Services() {
 
         {/* Hero Section */}
         <div className="text-center space-y-6 mb-20">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">
             Services
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
-            Delivering comprehensive solutions tailored to your needs. From concept to deployment,
-            I ensure quality, scalability, and excellence in every project.
+            I&apos;m ready to help bring your vision to life with comprehensive solutions 
+            tailored to your needs. From concept to deployment, I ensure quality, 
+            scalability, and excellence in every project.
           </p>
         </div>
 
