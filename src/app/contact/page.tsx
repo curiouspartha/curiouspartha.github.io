@@ -10,11 +10,11 @@ const Contact: FC = () => {
             Based in Amsterdam, NL 🌟
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent">
-            Let's Build Something Together
+            Let&apos;s Build Something Together
           </h1>
           <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
             Whether you have a project in mind or just want to chat about technology, 
-            I'm always excited to connect with fellow developers and innovators.
+            I&apos;m always excited to connect with fellow developers and innovators.
           </p>
         </div>
 
