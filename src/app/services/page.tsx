@@ -14,10 +14,47 @@ export default function Services() {
             Services
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
-            I&apos;m ready to help bring your vision to life with comprehensive solutions 
-            tailored to your needs. From concept to deployment, I ensure quality, 
-            scalability, and excellence in every project.
+            I bring your vision to life through dedicated, one-on-one collaboration. 
+            As a passionate problem solver, I carefully select projects that allow me 
+            to deliver exceptional value while maintaining the highest quality standards.
           </p>
+        </div>
+
+        {/* New Commitment Section - Add this after the hero section */}
+        <div className="mb-20 grid gap-6 sm:grid-cols-2">
+          <div className="card bg-gradient-to-br from-accent/5 to-primary/5">
+            <h3 className="text-xl font-bold mb-4 text-gradient">Why Work With Me?</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Dedicated one-on-one attention - I work with only one client at a time to ensure focused delivery</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Clear commitments and expectations set upfront - no surprises</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>No cure, no pay – building trust and partnership</span>
+              </li>
+            </ul>
+          </div>
+          <div className="card bg-gradient-to-br from-primary/5 to-accent/5">
+            <h3 className="text-xl font-bold mb-4 text-gradient">My Motivation</h3>
+            <p className="text-content leading-relaxed">
+              Beyond my full-time role, I take on select projects that inspire creativity and innovation. 
+              For me, it's not just about technical work or financial gain – it's about collaborating 
+              with like-minded innovators, exploring diverse technologies, and turning complex challenges 
+              into meaningful, impactful solutions. Every project is an opportunity to create something 
+              truly extraordinary together.
+            </p>
+          </div>
         </div>
 
         {/* Services Grid */}
@@ -36,20 +73,24 @@ export default function Services() {
                   Full Stack Development
                 </h3>
                 <p className="text-content">
-                  End-to-end web application development using modern technologies and best practices.
+                  Modern, scalable web applications built with cutting-edge technologies and industry best practices.
                 </p>
                 <ul className="space-y-2 text-content">
                   <li className="flex items-center">
                     <span className="mr-2">•</span>
-                    Custom Web Applications
+                    React & Next.js Applications
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2">•</span>
-                    Responsive Design
+                    TypeScript & Node.js
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2">•</span>
-                    Progressive Web Apps
+                    Database Design & ORM
+                  </li>
+                  <li className="flex items-center">
+                    <span className="mr-2">•</span>
+                    Performance Optimization
                   </li>
                 </ul>
               </div>
