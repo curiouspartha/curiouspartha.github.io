@@ -2,8 +2,8 @@ export default function Services() {
   return (
     <div className="min-h-screen">
       <section className="section-padding flex items-center min-h-[calc(100vh-4rem)]">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gradient text-center">
             Services
           </h1>
 
@@ -17,7 +17,7 @@ export default function Services() {
             <div className="card">
               <h2 className="text-2xl font-bold mb-4 text-accent">Cloud Architecture Design in AWS</h2>
               <p className="text-foreground/80 leading-relaxed">
-                Leveraging AWS's robust suite of services, I design scalable, secure, and efficient 
+                Leveraging AWS&apos;s robust suite of services, I design scalable, secure, and efficient 
                 cloud architectures that align with your business objectives. My approach ensures 
                 optimal performance, cost-effectiveness, and adherence to best practices.
               </p>
@@ -51,7 +51,7 @@ export default function Services() {
               href="/contact" 
               className="bg-accent hover:bg-accent/90 text-background px-8 py-3 rounded-full font-medium transition-colors inline-block"
             >
-              Let's Discuss Your Project
+              Let&apos;s Discuss Your Project
             </a>
           </div>
         </div>

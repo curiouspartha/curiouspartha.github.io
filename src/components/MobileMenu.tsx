@@ -1,15 +1,36 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { MobileNavLinks } from './NavLinks';
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        menuRef.current && 
+        buttonRef.current && 
+        !menuRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="md:hidden">
       <button
-        className="p-2 rounded-lg glass-effect"
+        ref={buttonRef}
+        className="p-2 rounded-lg bg-background border border-foreground/10"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
@@ -31,6 +52,7 @@ export default function MobileMenu() {
       </button>
 
       <div 
+        ref={menuRef}
         className={`${
           isMenuOpen 
             ? 'translate-y-0 opacity-100 pointer-events-auto' 

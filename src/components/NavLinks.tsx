@@ -45,7 +45,7 @@ export function MobileNavLinks({ onItemClick }: { onItemClick?: () => void }) {
   const pathname = usePathname();
 
   return (
-    <div className="glass-panel rounded-2xl shadow-lg shadow-black/10 p-2 space-y-1">
+    <div className="bg-background rounded-2xl shadow-lg shadow-black/10 p-2 space-y-1">
       {[
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },

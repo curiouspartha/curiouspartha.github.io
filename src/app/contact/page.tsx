@@ -4,7 +4,7 @@ const Contact: FC = () => {
   return (
     <div className="min-h-screen">
       <section className="section-padding flex items-center min-h-[calc(100vh-4rem)]">
-        <div className="max-w-4xl mx-auto w-full">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent text-center">
             Contact Me
           </h1>
