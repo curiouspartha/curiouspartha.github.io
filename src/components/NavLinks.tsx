@@ -56,8 +56,8 @@ export function MobileNavLinks({ onItemClick }: { onItemClick?: () => void }) {
           href={href} 
           className={`block px-4 py-3 rounded-xl transition-colors
             ${pathname === href 
-              ? 'bg-white/[0.1] text-white' 
-              : 'hover:bg-white/[0.07]'
+              ? 'bg-accent/10 text-accent' 
+              : 'hover:bg-accent/5 text-foreground/80 hover:text-foreground'
             }`}
           onClick={onItemClick}
         >
