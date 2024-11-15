@@ -19,7 +19,7 @@ export default function Services() {
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
             Transforming ideas into powerful digital solutions through dedicated collaboration 
-            and technical excellence. Let's build something extraordinary together.
+            and technical excellence. Let&apos;s build something extraordinary together.
           </p>
         </div>
 
@@ -102,48 +102,46 @@ export default function Services() {
                   <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-content">Dedicated Focus - I work exclusively with one client at a time</span>
+                  <span className="text-content">Exclusive focus - I work with only one client at a time</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-content">Open communication - set transparent expectations from the start</span>
+                  <span className="text-content">No cure, no pay - Your satisfaction is guaranteed</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-content">Tailored Solutions - designed specifically to meet your goals and challenges</span>
+                  <span className="text-content">Dedicated one-on-one attention throughout the project lifecycle</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-content">Timely Excellence - delivering high-quality results on schedule</span>
+                  <span className="text-content">Clear communication and transparent expectations</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-content">Results-Driven Partnership - No cure, no pay</span>
+                  <span className="text-content">Quality-focused development with attention to detail</span>
                 </li>
               </ul>
             </div>
             <div className="card bg-gradient-to-br from-primary/5 to-accent/5 hover:-translate-y-2 transition-all duration-500">
-              <h3 className="text-xl font-bold mb-6 text-gradient">My Motivation</h3>
+              <h3 className="text-xl font-bold mb-6 text-gradient">The Experience</h3>
               <p className="text-content leading-relaxed mb-6">
-                Beyond my full-time role, I take on select projects that inspire creativity and innovation. 
-                For me, it's not just about technical work or financial gain – it's about collaborating with 
-                like-minded innovators, exploring diverse technologies, and turning complex challenges 
-                into meaningful, impactful solutions. Every project is an opportunity to create something 
-                truly extraordinary together.
+                Working with me means getting a dedicated partner who is invested in your success. 
+                I bring not just technical expertise, but also a deep understanding of business needs 
+                and user experience.
               </p>
               <a 
                 href="/contact"
                 className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
               >
-                <span>Let's discuss your project</span>
+                <span>Let&apos;s discuss your project</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -162,22 +160,22 @@ export default function Services() {
               {
                 number: "01",
                 title: "Discovery",
-                description: "Understanding your needs and project requirements through in-depth consultation. We'll discuss your goals, challenges, and vision to ensure perfect alignment.",
+                description: "Understanding your needs and project requirements through in-depth consultation. We&apos;ll discuss your goals, challenges, and vision to ensure perfect alignment.",
               },
               {
                 number: "02",
                 title: "Planning",
-                description: "Developing a comprehensive strategy and roadmap. I'll outline the technical approach, timeline, and deliverables to set clear expectations and ensure success.",
+                description: "Developing a comprehensive strategy and roadmap. I&apos;ll outline the technical approach, timeline, and deliverables to set clear expectations and ensure success.",
               },
               {
                 number: "03",
                 title: "Execution",
-                description: "Building your solution with regular updates and transparent communication. You'll always know the project status and have opportunities for feedback and adjustments.",
+                description: "Building your solution with regular updates and transparent communication. You&apos;ll always know the project status and have opportunities for feedback and adjustments.",
               },
               {
                 number: "04",
                 title: "Support",
-                description: "Providing ongoing maintenance and improvements after launch. I remain committed to your project's success with continued support and optimization.",
+                description: "Providing ongoing maintenance and improvements after launch. I remain committed to your project&apos;s success with continued support and optimization.",
               }
             ].map((step) => (
               <div key={step.number} className="flex gap-6 group">
@@ -205,7 +203,7 @@ export default function Services() {
         <div className="text-center space-y-8">
           <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
           <p className="text-content max-w-2xl mx-auto">
-            Let's transform your vision into reality. Contact me to discuss your project 
+            Let&apos;s transform your vision into reality. Contact me to discuss your project 
             and explore how we can work together.
           </p>
           <a 
