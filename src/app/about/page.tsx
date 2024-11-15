@@ -17,7 +17,7 @@ export default function About() {
             About Me
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate Full Stack Engineer who believes in the perfect blend of creativity and technical expertise. 
+            I&rsquo;m a passionate Full Stack Engineer who believes in the perfect blend of creativity and technical expertise. 
             With a keen eye for detail and a love for clean code, I transform complex challenges into elegant solutions.
           </p>
         </div>
