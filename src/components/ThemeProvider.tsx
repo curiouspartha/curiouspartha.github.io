@@ -13,13 +13,14 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('dark');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.className = savedTheme;
-    }
+    // Get saved theme or default to 'dark'
+    const savedTheme = (localStorage.getItem('theme') as Theme) || 'dark';
+    setTheme(savedTheme);
+    document.documentElement.className = savedTheme;
+    setMounted(true);
   }, []);
 
   const toggleTheme = () => {
@@ -28,6 +29,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('theme', newTheme);
     document.documentElement.className = newTheme;
   };
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

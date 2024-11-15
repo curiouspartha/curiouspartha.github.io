@@ -32,9 +32,12 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Navigation />
-          <main className="pt-16">
+          <main className="pt-16 pb-16">
             {children}
           </main>
+          <footer className="fixed bottom-0 left-0 right-0 py-4 text-center text-sm text-foreground/60 bg-background/80 backdrop-blur-md border-t border-foreground/5">
+            Crafted with care by human 👨‍💻 and machine 🤖
+          </footer>
         </ThemeProvider>
       </body>
     </html>
