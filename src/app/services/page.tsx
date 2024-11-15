@@ -2,256 +2,170 @@ export default function Services() {
   return (
     <div className="min-h-[calc(100vh-8rem)] py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-        {/* Background decorative elements */}
+        {/* Enhanced background elements */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-accent/30 rounded-full blur-[128px]" />
-          <div className="absolute bottom-10 left-10 w-72 h-72 bg-primary/30 rounded-full blur-[128px]" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-[160px]" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/20 rounded-full blur-[160px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/10 rounded-full blur-[180px]" />
         </div>
 
-        {/* Hero Section */}
-        <div className="text-center space-y-6 mb-20">
+        {/* Hero Section with Animation */}
+        <div className="text-center space-y-8 mb-24 animate-fade-in">
+          <span className="inline-block text-accent/80 font-medium px-4 py-2 bg-accent/10 rounded-full">
+            Expert Solutions for Modern Challenges
+          </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">
-            Services
+            Services & Expertise
           </h1>
           <p className="text-lg sm:text-xl text-content max-w-3xl mx-auto leading-relaxed">
-            I bring your vision to life through dedicated, one-on-one collaboration. 
-            As a passionate problem solver, I carefully select projects that allow me 
-            to deliver exceptional value while maintaining the highest quality standards.
+            Transforming ideas into powerful digital solutions through dedicated collaboration 
+            and technical excellence. Let's build something extraordinary together.
           </p>
         </div>
 
-        {/* New Commitment Section - Add this after the hero section */}
-        <div className="mb-20 grid gap-6 sm:grid-cols-2">
-          <div className="card bg-gradient-to-br from-accent/5 to-primary/5">
-            <h3 className="text-xl font-bold mb-4 text-gradient">Why Work With Me?</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Dedicated one-on-one attention - I work with only one client at a time to ensure focused delivery</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Clear commitments and expectations set upfront - no surprises</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>No cure, no pay – building trust and partnership</span>
-              </li>
-            </ul>
-          </div>
-          <div className="card bg-gradient-to-br from-primary/5 to-accent/5">
-            <h3 className="text-xl font-bold mb-4 text-gradient">My Motivation</h3>
-            <p className="text-content leading-relaxed">
-              Beyond my full-time role, I take on select projects that inspire creativity and innovation. 
-              For me, it's not just about technical work or financial gain – it's about collaborating 
-              with like-minded innovators, exploring diverse technologies, and turning complex challenges 
-              into meaningful, impactful solutions. Every project is an opportunity to create something 
-              truly extraordinary together.
-            </p>
-          </div>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid gap-8 md:grid-cols-2 mb-20">
-          {/* Full Stack Development */}
-          <div className="card group hover:-translate-y-2 transition-all">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 p-3 rounded-2xl bg-accent/10 text-accent">
+        {/* Featured Services Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-24">
+          {[
+            {
+              icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" 
                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-bold group-hover:text-accent transition-colors">
-                  Full Stack Development
-                </h3>
-                <p className="text-content">
-                  Modern, scalable web applications built with cutting-edge technologies and industry best practices.
-                </p>
-                <ul className="space-y-2 text-content">
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    React & Next.js Applications
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    TypeScript & Node.js
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Database Design & ORM
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Performance Optimization
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Cloud Architecture */}
-          <div className="card group hover:-translate-y-2 transition-all">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 p-3 rounded-2xl bg-primary/10 text-primary">
+              ),
+              title: "Full Stack Development",
+              description: "End-to-end web applications built with modern technologies and best practices.",
+              features: ["React & Next.js", "TypeScript", "Node.js", "Database Design"],
+              color: "accent"
+            },
+            {
+              icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" 
                     d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                  Cloud Architecture
-                </h3>
-                <p className="text-content">
-                  Scalable and secure cloud solutions designed for optimal performance.
-                </p>
-                <ul className="space-y-2 text-content">
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    AWS Infrastructure
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Serverless Solutions
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Cloud Migration
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* API Development */}
-          <div className="card group hover:-translate-y-2 transition-all">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 p-3 rounded-2xl bg-accent/10 text-accent">
+              ),
+              title: "Cloud Architecture",
+              description: "Scalable cloud solutions designed for optimal performance and security.",
+              features: ["AWS Infrastructure", "Serverless", "Cloud Migration", "DevOps"],
+              color: "primary"
+            },
+            {
+              icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" 
                     d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-bold group-hover:text-accent transition-colors">
-                  API Development
-                </h3>
-                <p className="text-content">
-                  Robust and scalable API solutions for seamless integration.
-                </p>
-                <ul className="space-y-2 text-content">
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    RESTful APIs
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    GraphQL
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    API Security
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Third party integrations
-                  </li>
+              ),
+              title: "API Development",
+              description: "Robust and scalable API solutions for seamless integration.",
+              features: ["RESTful APIs", "GraphQL", "Security", "Documentation"],
+              color: "accent"
+            }
+          ].map((service, index) => (
+            <div key={index} className="group">
+              <div className="h-full card hover:-translate-y-2 transition-all duration-500 
+                backdrop-blur-xl bg-gradient-to-br from-background/50 to-background/30
+                hover:shadow-lg hover:shadow-accent/5">
+                <div className={`w-14 h-14 mb-6 rounded-2xl bg-${service.color}/10 
+                  text-${service.color} flex items-center justify-center
+                  group-hover:scale-110 transition-transform duration-500`}>
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="text-content mb-6">{service.description}</p>
+                <ul className="space-y-3">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-center space-x-3">
+                      <svg className={`w-5 h-5 text-${service.color}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-content">{feature}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-          </div>
-
-          {/* DevOps & CI/CD */}
-          <div className="card group hover:-translate-y-2 transition-all">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 p-3 rounded-2xl bg-primary/10 text-primary">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" 
-                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                  DevOps & CI/CD
-                </h3>
-                <p className="text-content">
-                  Streamlined development operations and automated deployment pipelines.
-                </p>
-                <ul className="space-y-2 text-content">
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Automated Deployments
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Infrastructure as Code
-                  </li>
-                  <li className="flex items-center">
-                    <span className="mr-2">•</span>
-                    Monitoring & Logging
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Process Section */}
-        <div className="space-y-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gradient">
-            My Approach
+        {/* Why Choose Me Section */}
+        <div className="mb-24">
+          <h2 className="text-3xl font-bold text-gradient text-center mb-12">
+            Why Work With Me?
           </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                title: "Discovery",
-                description: "Understanding your needs and project requirements"
-              },
-              {
-                title: "Planning",
-                description: "Developing a comprehensive strategy and roadmap"
-              },
-              {
-                title: "Execution",
-                description: "Building your solution with regular updates"
-              },
-              {
-                title: "Support",
-                description: "Ongoing maintenance and improvements"
-              }
-            ].map((step, index) => (
-              <div key={index} className="card hover:scale-105 transition-transform">
-                <div className="text-2xl font-bold text-accent mb-2">
-                  {(index + 1).toString().padStart(2, '0')}
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                <p className="text-content text-sm">{step.description}</p>
-              </div>
-            ))}
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="card bg-gradient-to-br from-accent/5 to-primary/5 hover:-translate-y-2 transition-all duration-500">
+              <h3 className="text-xl font-bold mb-6 text-gradient">My Commitment</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-content">Dedicated Focus - I work exclusively with one client at a time</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-content">Open communication - set transparent expectations from the start</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-content">Tailored Solutions - designed specifically to meet your goals and challenges</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-content">Timely Excellence - delivering high-quality results on schedule</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-content">Results-Driven Partnership - No cure, no pay</span>
+                </li>
+              </ul>
+            </div>
+            <div className="card bg-gradient-to-br from-primary/5 to-accent/5 hover:-translate-y-2 transition-all duration-500">
+              <h3 className="text-xl font-bold mb-6 text-gradient">My Motivation</h3>
+              <p className="text-content leading-relaxed mb-6">
+                Beyond my full-time role, I take on select projects that inspire creativity and innovation. 
+                For me, it's not just about technical work or financial gain – it's about collaborating with 
+                like-minded innovators, exploring diverse technologies, and turning complex challenges 
+                into meaningful, impactful solutions. Every project is an opportunity to create something 
+                truly extraordinary together.
+              </p>
+              <a 
+                href="/contact"
+                className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
+              >
+                <span>Let's discuss your project</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-20 space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-bold">Ready to Start Your Project?</h2>
+        <div className="text-center space-y-8">
+          <h2 className="text-3xl font-bold">Ready to Get Started?</h2>
           <p className="text-content max-w-2xl mx-auto">
-            Let&apos;s discuss how I can help bring your vision to life.
+            Let's transform your vision into reality. Contact me to discuss your project 
+            and explore how we can work together.
           </p>
           <a 
             href="/contact"
-            className="inline-block px-8 py-3 rounded-full bg-accent hover:bg-accent/90 
-              text-background font-medium transition-all duration-300
-              hover:shadow-[0_0_2rem_-0.5rem_rgb(var(--accent))]"
+            className="inline-block px-8 py-4 rounded-full bg-accent hover:bg-accent/90 
+              text-background font-medium transition-all duration-500
+              hover:shadow-[0_0_3rem_-0.5rem_rgb(var(--accent))]"
           >
-            Get Started
+            Start Your Project
           </a>
         </div>
       </div>
