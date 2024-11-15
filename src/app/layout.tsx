@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import Script from 'next/script';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,15 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="//js.hs-scripts.com/48160403.js"
-        ></script>
-      </head>
+      <Script
+        id="hubspot-script"
+        src="//js.hs-scripts.com/48160403.js"
+        strategy="lazyOnload"
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
