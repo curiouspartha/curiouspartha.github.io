@@ -27,6 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js.hs-scripts.com/48160403.js"
+        ></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -39,9 +48,6 @@ export default function RootLayout({
             Crafted with care by human 👨‍💻 and machine 🤖
           </footer>
         </ThemeProvider>
-        {/* Start of HubSpot Embed Code */}
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/48160403.js"></script>
-        {/* End of HubSpot Embed Code */}
       </body>
     </html>
   );
